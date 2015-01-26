@@ -2,6 +2,7 @@ Overview
 --------
 
 Resolve a deeply nested structure of q-promises into a promise for the whole structure.
+
 There is no cycle-detection whatsoever. Cycle-structures will lead into an endless-loop.
 
 Example
@@ -33,7 +34,7 @@ deep({a: 1, b: P({ c: 2, d: P(3)})}).done(console.log); // == { a: 1, b: { c: 2,
     
 ```
 
-There
+
 
 Changes
 --------
