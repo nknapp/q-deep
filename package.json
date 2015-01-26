@@ -1,0 +1,26 @@
+{
+  "name": "q-deep",
+  "version": "0.0.1",
+  "description": "Resolve a deeply nested structure of q-promises into a promise for the whole structure",
+  "main": "q-deep.js",
+  "homepage": "http://github.com/nknapp/q-deep",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nknapp/q-deep.git"
+  },
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "author": "Nils Knappmeier <npm@knappi.org> (http://www.knappi.org)",
+  "license": "MIT",
+  "keywords": [
+    "q",
+    "promise",
+    "traverse",
+    "structure",
+    "resolve"
+  ],
+  "dependencies": {
+    "q": "^1.1.2"
+  }
+}
