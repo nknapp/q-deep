@@ -19,7 +19,7 @@ function P(value, factor) {
 }
 
 
-var deep = require("q-deep.js");
+var deep = require("q-deep");
 
 deep(2).done(console.log); // == 2
 deep(P(2)).done(console.log); // == 2
