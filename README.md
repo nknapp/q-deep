@@ -38,6 +38,13 @@ deep({a: 1, b: P({ c: 2, d: P(3)})}).done(console.log); // == { a: 1, b: { c: 2,
 
 Changes
 --------
+#### 1.0.0
 
-####0.0.1
+  * No changes, but since the api works well so far, it is now considered stable in terms of semver.
+
+
+#### 0.0.2
+  * Fixes in README and examples
+
+#### 0.0.1
   * Initial version
