@@ -1,7 +1,5 @@
-Overview
---------
-
-Resolve a deeply nested structure of q-promises into a promise for the whole structure.
+Attention
+---------
 
 There is no cycle-detection whatsoever. Cycle-structures will lead into an endless-loop.
 
