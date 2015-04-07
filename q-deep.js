@@ -25,7 +25,7 @@ function handleObject(obj) {
  * @returns {*}
  */
 function handleAny(obj) {
-    if (Q.isPromise(obj)) {
+    if (Q.isPromiseAlike(obj)) {
         return obj.then(handleAny);
     } else if ('[object Object]' === Object.prototype.toString.call(obj)) {
         return handleObject(obj);

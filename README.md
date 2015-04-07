@@ -36,6 +36,10 @@ deep({a: 1, b: P({ c: 2, d: P(3)})}).done(console.log); // == { a: 1, b: { c: 2,
 
 Changes
 --------
+#### 2.0.0
+  * Use "Q.isPromiseAlike" to check for promises. Otherwise, promises from different Q-instances
+    are not resolved properly.
+
 #### 1.0.0
 
   * No changes, but since the api works well so far, it is now considered stable in terms of semver.
