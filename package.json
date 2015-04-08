@@ -1,6 +1,6 @@
 {
   "name": "q-deep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resolve a deeply nested structure of q-promises into a promise for the whole structure",
   "main": "q-deep.js",
   "homepage": "http://github.com/nknapp/q-deep",
