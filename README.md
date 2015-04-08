@@ -36,7 +36,7 @@ deep({a: 1, b: P({ c: 2, d: P(3)})}).done(console.log); // == { a: 1, b: { c: 2,
 
 Changes
 --------
-#### 2.0.0
+#### 1.0.1
   * Use "Q.isPromiseAlike" to check for promises. Otherwise, promises from different Q-instances
     are not resolved properly.
 
