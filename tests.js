@@ -68,6 +68,10 @@ var spec = {
         input: 2,
         output: 2
     },
+    arrayWithoutPromise: {
+        input: [2,3],
+        output: [2,3]
+    },
     promise: {
         input: delay(2),
         output: 2
@@ -96,6 +100,7 @@ Q.all(Object.keys(spec).map(function (key) {
     if (run && run !== key) {
         return;
     }
+    console.log(key);
     var testSpec = spec[key];
     return wholeObj(testSpec.input).then(function (result) {
         assert.deepEqual(result, testSpec.output);
