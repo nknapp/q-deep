@@ -1,7 +1,7 @@
 Deprecation notice
 ------------------
 
-This project is now essentially a wrapper for the [deep-aplus](https://npmjs.com/package/deep-plus)-package.
+This project is now essentially a wrapper for the [deep-aplus](https://npmjs.com/package/deep-aplus)-package.
 The same functionality can be achieved by the following snippet:
 
 ```js
@@ -45,6 +45,8 @@ deep({a: 1, b: P({ c: 2, d: P(3)})}).done(console.log); // == { a: 1, b: { c: 2,
 
 Changes
 --------
+#### 1.0.3
+  * Fix typo in README
 #### 1.0.2
   * Added deprecation notice. Please use `deep-aplus` instead.
     This package is now only a wrapper for `deep-aplus`
