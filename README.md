@@ -1,7 +1,16 @@
-Attention
----------
+Deprecation notice
+------------------
 
-There is no cycle-detection whatsoever. Cycle-structures will lead into an endless-loop.
+This project is now essentially a wrapper for the [deep-aplus](https://npmjs.com/package/deep-plus)-package.
+The same functionality can be achieved by the following snippet:
+
+```js
+var Q = require("q");
+var deep = require('deep-aplus')(Q.Promise);
+```
+
+You should have a look at `deep-aplus` since it will work with you own version of Q (or
+any other promise library)
 
 Example
 -------
@@ -36,6 +45,10 @@ deep({a: 1, b: P({ c: 2, d: P(3)})}).done(console.log); // == { a: 1, b: { c: 2,
 
 Changes
 --------
+#### 1.0.2
+  * Added deprecation notice. Please use `deep-aplus` instead.
+    This package is now only a wrapper for `deep-aplus`
+  
 #### 1.0.1
   * Use "Q.isPromiseAlike" to check for promises. Otherwise, promises from different Q-instances
     are not resolved properly.

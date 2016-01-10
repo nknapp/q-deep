@@ -21,6 +21,7 @@
     "resolve"
   ],
   "dependencies": {
+    "deep-aplus": "^1.0.1",
     "q": "^1.1.2"
   }
 }
